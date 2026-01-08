@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nzz</title>
+  <meta name="description" content="nizzdv" />
+  <meta name="author" content="nizziol" />
+  <link rel="icon" href="files/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body oncontextmenu="return false;">
+  <div id="introScreen">
+    <div class="intro-text">676</div>
+  </div>
+  <div class="pages-container">
+    <div class="page main-page active">
+      <div class="container hidden">
+        <div class="profile-card">
+          <img src="files/nigga.png" alt="Profilowe" class="avatar" />
+          <h1 class="nickname">SafeV3ssel</h1>
+          <div class="tags">
+            <span>#746</span>
+            <span>#0201</span>
+          </div>
+          <div class="location"><i class="fas fa-map-marker-alt"></i> Poland</div>
+          <div class="socials">
+            <a href="https://www.ptoszek.pl" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://www.tiktok.com/@safevessel" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/profranciszek" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="music-container">
+            <div class="music-row">
+              <img src="files/pg2.jpg" class="music-avatar" alt="cover" />
+              <div class="music-info">
+                <div class="music-title">∘₊✧───────────✧₊∘</div>
+                <div class="music-controls">
+                  <input type="range" id="seekBar" value="0" />
+                  <button id="playPause"><i class="fas fa-play"></i></button>
+                  <input type="range" id="volumeBar" min="0" max="1" step="0.01" value="0.1" />
+                </div>
+                <div class="time">
+                  <span id="startTime">00:00</span>
+                  <span id="endTime">03:18</span>
+                </div>
+              </div>
+            </div>
+            <audio id="audio" src="files/gowno.mp3"></audio>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="page about-page">
+    <div class="container alt-container">
+      <div class="corner-box top-left">nigger</div>
+     <div class="corner-box bottom-right">chuj</div>
+      <h2 class="nickname">O mnie</h2>
+      <p style="margin-top:1rem;color:#ccc;">duperele
+      </p>
+    </div>
+  </div>
+</div>
+  <button class="slide-btn" id="togglePage"><i class="fas fa-arrow-right"></i></button>
+  <script src="main.js"></script>
+  <div id="nowPlaying">currently playing: Franek Masturbatra - Don Pedalini (prod. Kutas Records)</div>
+</body>
+</html>
+
+
