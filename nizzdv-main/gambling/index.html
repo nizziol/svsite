@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GAMBLING 2.0 LESGOO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Blackjack</h1>
+      <div class="balance"> Saldo: <span id="balance">67</span> $</div>
+    </header>
+
+    <main>
+      <aside class="controls">
+        <label>Kwota zakładu:</label>
+        <input id="betInput" type="number" min="1" value="10" />
+        <div class="btns">
+          <button id="dealBtn">Rozdaj</button>
+          <button id="hitBtn" disabled>Hit</button>
+          <button id="standBtn" disabled>Stand</button>
+          <button id="doubleBtn" disabled>Double</button>
+          <button id="newRoundBtn" disabled>Nowa runda</button>
+        </div>
+        <div id="message" class="message"></div>
+      </aside>
+
+      <section class="board">
+        <div class="hand dealer">
+          <h2>Dealer</h2>
+          <div id="dealerCards" class="cards"></div>
+          <div class="hand-value" id="dealerValue">Wartość: -</div>
+        </div>
+
+        <div class="hand player">
+          <h2>Ty</h2>
+          <div id="playerCards" class="cards"></div>
+          <div class="hand-value" id="playerValue">Wartość: -</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Nie dodawaj se kasy w zbadaj element bo ci jebne, naprawie to jak mi sie bedzie chcialo</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
