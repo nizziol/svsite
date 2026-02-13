@@ -1,3 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>schawfty</title>
+  <meta name="description" content="Schawfty..." />
+  <meta name="author" content="Schawfty..." />
+  <link rel="icon" href="files/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body oncontextmenu="return false;">
+  <div id="introScreen">
+    <div class="intro-text">12.06.26</div>
+  </div>
+  <div class="pages-container">
+    <div class="page main-page active">
+      <div class="container hidden">
+        <div class="profile-card">
+          <img src="files/pfp.jpg" alt="Profilowe" class="avatar" />
+          <h1 class="nickname">Schawfty...</h1>
+          <div class="tags">
+            <span>#22:22</span>
+            <span>#12</span>
+          </div>
+          <div class="location"><i class="fas fa-map-marker-alt"></i> Poland</div>
+          <div class="socials">
+            <a href="https://steamcommunity.com/profiles/76561199107723007/" target="_blank"><i class="fab fa-steam"></i></a>
+            <a href="https://www.youtube.com/@wypijherbatkenaodstresowan1593" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/teemek_08/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://discord.gg/tvF2UzNrQv" target="_blank"><i class="fab fa-discord"></i></a>
+          </div>
+          <div class="music-container">
+            <div class="music-row">
+              <img src="files/ikona-muzyki.png" class="music-avatar" alt="cover" />
+              <div class="music-info">
+                <div class="music-title">∘₊✧───────────✧₊∘</div>
+                <div class="music-controls">
+                  <input type="range" id="seekBar" value="0" />
+                  <button id="playPause"><i class="fas fa-play"></i></button>
+                  <input type="range" id="volumeBar" min="0" max="1" step="0.01" value="0.1" />
+                </div>
+                <div class="time">
+                  <span id="startTime">00:00</span>
+                  <span id="endTime">03:18</span>
+                </div>
+              </div>
+            </div>
+            <audio id="audio" src="files/muzyka.mp3"></audio>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<h1>RICCARDO CARBONARA TO JEBANY PIES I KURWA</h1>
-<h2>edyta woloszyn</h2>
+  <div class="page about-page">
+    <div class="container alt-container">
+      <div class="corner-box top-left">jebac woloszyna cwela</div>
+     <div class="corner-box bottom-right">kurwy</div>
+      <h2 class="nickname">patryk kurdyla cwel jebany kurwa krasnik kaczmarskiego 6</h2>
+      <p style="margin-top:1rem;color:#ccc;"></p>
+    </div>
+  </div>
+</div>
+  <button class="slide-btn" id="togglePage"><i class="fas fa-arrow-right"></i></button>
+  <script src="main.js"></script>
+  <div id="nowPlaying">currently playing: mlodykamil - KŁO PO TY</div>
+</body>
+</html>
+
+
